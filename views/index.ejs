@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Task</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <nav>
+    <div class="links"><a href="/">Home</a>
+      <a href="/feed">All Users</a>
+
+    </div>
+    <div class="buttons">
+      <a href="/login"> Login</a>
+    </div>
+
+  </nav>
+
+  <form action="/register" method="post" class="academy">
+
+    <div class="left">
+      <h1>Academy Student Sign Up</h1>
+      <label for="">Name :</label>
+      <input type="text" placeholder="Name Text" name="username"><br><br>
+      <label for="">Email :</label>
+      <input type="email" placeholder="Email" name="email"><br><br>
+      <label for="">Password : </label>
+      <input type="password" placeholder="password" name="password"><br><br>
+      <label for="">Date of Graduation : </label>
+      <input type="date"><br><br>
+      <label for="">Github : </label>
+      <input type="text" placeholder="link" name="githublink"><br><br>
+      <label for="">Website : </label>
+      <input type="text" placeholder="URL" name="website"> <br><br>
+      <label for="">Location :</label>
+      <select id="options" name="location" multiple>
+        <option value="Sydney" name="location">Sydney</option>
+        <option value="Melbourne" name="location">Melbourne</option>
+
+
+      </select>
+
+
+
+
+
+
+    </div>
+    <div class="right">
+
+
+      <br><br>
+      <label for="">Field of Interest : </label>
+      <select id="options" name="fieldofinterest" multiple>
+        <option value="Front-end" name="fieldofinterest">Front-end</option>
+        <option value="Back-end" name="fieldofinterest">Back-end</option>
+
+
+      </select>
+
+
+
+      <br><br>
+      <label for="">Seeking : </label><br><br>
+
+      <select id="options" name="job" multiple>
+        <option value="Internship">Internship</option>
+        <option value="Remote">Remote</option>
+        <option value="IT position">IT position</option>
+        <option value="Not Seeking">Not Seeking</option>
+
+      </select><br>
+      <label for="">Tech Stack : </label><br><br>
+
+      <select id="options" name="techstack" multiple>
+        <option value="Ruby">Ruby</option>
+        <option value="Rails">Rails</option>
+        <option value="JavaScripts">JavaScripts</option>
+        <option value="HTML/CSS">HTML/CSS</option>
+        <option value="Python">Python</option>
+        <option value="C++/C">C++/C</option>
+
+      </select><br><br>
+      <input type="submit" class="button">
+
+
+
+
+      </di>
+  </form>
+
+</body>
+
+</html>

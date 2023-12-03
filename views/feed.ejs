@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container container_feed d-flex flex-wrap mt-4 p-1">
+        <% allusers.forEach(function(elem){ %>
+            <div class="card m-1" style="width: 18rem; box-shadow: 10px 10px 17px #ab121279;">
+                <div class="h_img " style="display: flex; justify-content: center; ">
+                    <img src="/images/uploads/<%= elem.profilepic %>"
+                        style=" margin-top: 4px; box-shadow: 10px 10px 17px #888888; width: 100px; height: 100px; border-radius: 50%;  object-fit: cover;"
+                        class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        <%=elem.username%>
+                    </h5>
+                    <p class="card-text">
+                    <h5> Email : <%=elem.email%>
+                    </h5>
+                    <h5> Github Link :<%= elem.githublink %>
+                    </h5>
+                    <br>
+                    <h5> Website Link : <%= elem.website %>
+                    </h5> <br>
+                    <h5> Location : <%= elem.location %>
+                    </h5><br>
+                    <h5>Field of Interest : <%= elem.fieldofinterest %>
+                    </h5> <br>
+                    <h5> Job Type : <%= elem.job %>
+                    </h5> <br>
+                    <h5>Technology Use : <%= elem.techstack %>
+                    </h5>
+                    </p>
+                    </p>
+                    <button class="buttons"><a href="/profile">View profile</a></button>
+
+                </div>
+            </div>
+            <%}) %>
+
+    </div>
+
+
+</body>
+
+</html>
